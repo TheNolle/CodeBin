@@ -1,0 +1,46 @@
+{
+  "author": "Nolly#0001",
+  "bugs": {
+    "url": "https://github.com/TheNolle/CodeBin/issues"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
+  },
+  "description": "CodeBin is a private, secure hastebin clone for storing, sharing, and collaborating on code snippets with fellow developers. Features include real-time collaboration, custom folders, tags, and cross-device accessibility. Built with Node.js, Express, EJS, and MongoDB.",
+  "devDependencies": {
+    "ejs": "^3.1.9",
+    "nodemon": "^2.0.22"
+  },
+  "homepage": "https://github.com/TheNolle/CodeBin#readme",
+  "keywords": [
+    "code-sharing",
+    "code-snippets",
+    "coding",
+    "collaboration",
+    "developers",
+    "ejs",
+    "expressjs",
+    "hastebin-clone",
+    "mongodb",
+    "node-js",
+    "private",
+    "programming",
+    "real-time",
+    "web-app",
+    "web-development"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "codebin.thenolle.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheNolle/CodeBin.git"
+  },
+  "scripts": {
+    "start": "node .",
+    "start:dev": "nodemon ."
+  },
+  "type": "module",
+  "version": "1.0.0"
+}

@@ -1,0 +1,28 @@
+{
+    "app": {
+        "name": "APP_NAME",
+        "description": "APP_DESCRIPTION",
+        "author": {
+            "name": "APP_AUTHOR_NAME",
+            "discord": {
+                "name": "DISCORD_NAME#0000",
+                "server": "DISCORD_SERVER"
+            },
+            "github": "LINK_TO_GITHUB",
+            "twitter": "LINK_TO_TWITTER",
+            "website": "LINK_TO_WEBSITE"
+        }
+    },
+    "server": {
+        "domain": "DOMAIN",
+        "port": 0000
+    },
+    "database": {
+        "type": "mongodb",
+        "host": "DB_HOST",
+        "port": "DB_PORT",
+        "name": "DB_NAME",
+        "password": "DB_PASSWORD",
+        "user": "DB_USER"
+    }
+}
