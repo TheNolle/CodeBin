@@ -11,7 +11,12 @@
             "github": "LINK_TO_GITHUB",
             "twitter": "LINK_TO_TWITTER",
             "website": "LINK_TO_WEBSITE"
-        }
+        },
+        "keywords": [
+            "KEYWORD_1",
+            "KEYWORD_2",
+            "KEYWORD_3"
+        ]
     },
     "server": {
         "domain": "DOMAIN",

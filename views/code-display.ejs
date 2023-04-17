@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title><%= locals.config.app.name %></title>
+    <%- include('_metas.ejs') %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/solarized-dark.min.css">
+    <script>hljs.highlightAll()</script>
+
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <%- include('_buttons.ejs', { id: locals.id }) %>
+        <div class="line-numbers">
+            <% for (let i = 1; i <= code.split('\n').length; i++) { %>
+                <div><%= i %></div>
+            <% } %>
+        </div>
+        <pre>
+            <code id="code-display" class="<%= locals.language ? `language-${locals.language}` : '' %>"><%= code %></code>
+        </pre>
+    </div>
+</body>
+
+</html>

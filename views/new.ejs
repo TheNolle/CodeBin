@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title><%= locals.config.app.name %> • New</title>
+    <%- include('_metas.ejs') %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/6.0.1/autosize.min.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="/save" method="post">
+            <%- include('_buttons.ejs') %>
+            <div class="wrapper">
+                <div class="line-numbers">&gt;</div>
+                <textarea autofocus name="value"><%= locals.value %></textarea>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script>autosize(document.querySelector('textarea'))</script>
+
+</html>
