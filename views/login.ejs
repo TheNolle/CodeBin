@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title><%= locals.config.app.name %> • Login</title>
+    <%- include('_metas.ejs') %>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <form action="/authenticate" method="post">
+            <% if (locals.errorCode == 0) { %>
+                <p class="error">An error occurred while logging in. Please try again.</p>
+            <% } else if (locals.errorCode == 1) { %>
+                <p class="error">Invalid username or password.</p>
+            <% } else if (locals.errorCode == 2) { %>
+                <p class="error">Your auth token is invalid</p>
+            <% } %>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>

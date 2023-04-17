@@ -12,6 +12,7 @@
             "twitter": "LINK_TO_TWITTER",
             "website": "LINK_TO_WEBSITE"
         },
+        "secret": "JSON_WEB_TOKEN_SECRET",
         "keywords": [
             "KEYWORD_1",
             "KEYWORD_2",

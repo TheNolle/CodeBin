@@ -4,6 +4,10 @@
         <a href="/new" class="btn">New</a>
         <% if (locals.saveable) { %>
             <button class="btn" type="submit">Save</button>
+            <div class="password-wrapper">
+                <span class="btn">&#x1F512;</span>
+                <input type="password" name="password" id="password" class="password-input" placeholder="Password (optional)">
+            </div> 
         <% } %>
         <% if (locals.id != null) { %>
             <a href="/<%= locals.id %>/duplicate" class="btn">Duplicate</a>

@@ -4,7 +4,9 @@
     "url": "https://github.com/TheNolle/CodeBin/issues"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.3"
   },
   "description": "CodeBin is a private, secure hastebin clone for storing, sharing, and collaborating on code snippets with fellow developers. Features include real-time collaboration, custom folders, tags, and cross-device accessibility. Built with Node.js, Express, EJS, and MongoDB.",
