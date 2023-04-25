@@ -1,4 +1,4 @@
-import checkAuthentication from '../middlewares/authentication.js'
+import { checkAuthentication } from '../middlewares/authentication.js'
 
 import Document from '../models/document.js'
 

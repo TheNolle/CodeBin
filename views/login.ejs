@@ -3,12 +3,12 @@
 
 <head>
     <title><%= locals.config.name %> • Login</title>
-    <%- include('_metas.ejs') %>
-    <link rel="stylesheet" href="/styles.css">
+    <%- include('components/metas.ejs') %>
 </head>
 
 <body>
     <div class="login-container">
+        <%- include('components/buttons.ejs') %>
         <form action="/authenticate" method="post">
             <% if (locals.errorCode == 0) { %>
                 <p class="error">An error occurred while logging in. Please try again.</p>

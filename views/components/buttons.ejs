@@ -1,0 +1,28 @@
+<div class="buttons-wrapper">
+    <a href="/" class="logo" title="Click me to get back to the Homepage"><%= locals.config.name %></a>
+    <% if (!locals.noButton) { %>
+        <div class="buttons">
+            <% if (!locals.authtoken) { %>
+                <a href="/login" class="btn" title="Login into your account">Login</a>
+            <% } else { %>
+                <a href="/logout" class="btn" title="Logout from your account">Logout</a>
+            <% } %>
+
+            <% if (locals.new) { %>
+                <a href="/new" class="btn" title="Create a new CodeBin">New</a>
+                <% } %>
+
+            <% if (locals.saveable) { %>
+                <button class="btn" type="submit" title="Save this CodeBin as is">Save</button>
+                <div class="password-wrapper">
+                    <span class="btn" title="Add a password ?">🔏</span>
+                    <input type="password" name="password" id="password" class="password-input" placeholder="Password (optional)">
+                </div> 
+            <% } %>
+
+            <% if (locals.id != null) { %>
+                <a href="/<%= locals.id %>/duplicate" class="btn" title="Duplicate this CodeBin as is">Duplicate</a>
+            <% } %>
+        </div>
+    <% } %>
+</div>

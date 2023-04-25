@@ -3,10 +3,11 @@ import express from 'express'
 import cookieParser from 'cookie-parser'
 
 //* Middlewares Imports
-import configuration from '../middlewares/configuration.js'
+import { configuration } from '../middlewares/configuration.js'
 
 //* Routes Imports
 import loginRoute from '../routes/login.js'
+import logoutRoute from '../routes/logout.js'
 import authenticateRoute from '../routes/authenticate.js'
 import homeRoute from '../routes/home.js'
 import newRoute from '../routes/new.js'
@@ -26,6 +27,7 @@ export default async function serverSetup(app) {
 
         //* Routes
         app.use(loginRoute)
+        app.use(logoutRoute)
         app.use(authenticateRoute)
         app.use(homeRoute)
         app.use(newRoute)

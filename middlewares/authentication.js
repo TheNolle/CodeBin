@@ -1,7 +1,7 @@
 import jsonwebtoken from 'jsonwebtoken'
 import config from '../config.json' assert { type: 'json' }
 
-export default function checkAuthentication(request, response, next) {
+export function checkAuthentication(request, response, next) {
     const token = request.cookies.token
     if (!token) return response.render('login', { errorCode: 2 })
     try {
