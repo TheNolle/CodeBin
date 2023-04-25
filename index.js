@@ -94,7 +94,7 @@ app.get('/new', checkAuthentication, async (request, response) => {
 })
 
 //= Save
-app.post('/save', async (request, response) => {
+app.post('/save', checkAuthentication, async (request, response) => {
     const { value, password } = request.body
     try {
         const document = await Document.create({ value, password, user: request.user._id })
@@ -105,7 +105,7 @@ app.post('/save', async (request, response) => {
 })
 
 //= Code
-app.get('/:id', async (request, response) => {
+app.get('/:id', checkAuthentication, async (request, response) => {
     const { id } = request.params
     try {
         const document = await Document.findById(id)
