@@ -9,10 +9,9 @@ import serverSetup from './functions/server.setup.js'
 const encodedPassword = encodeURIComponent(config.database.password)
 const connectionString = config.database.user ? `mongodb://${config.database.user}:${encodedPassword}@${config.database.host}:${config.database.port}/${config.database.name}` : `mongodb://{config.database.host}:${config.database.port}/${config.database.name}`
 
-
 //? Express
 const app = express()
-const port = config.server.port || 3000
+const port = config.server.port || 2500
 
 //* Server
 app.listen(port, async () => {

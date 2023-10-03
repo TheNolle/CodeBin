@@ -2,6 +2,9 @@
 
 CodeBin is a private, handmade hastebin clone. It offers a convenient and secure way to store, share, and collaborate on code snippets with a community of fellow developers.
 
+### Preview
+![Preview](preview.png)
+
 
 ## 🌟 Features
 - 🔒 Private: Requires an account for access
@@ -19,15 +22,20 @@ CodeBin is a private, handmade hastebin clone. It offers a convenient and secure
 
 
 ## 📚 Table of Contents
-1. [Getting Started](#getting-started-)
-    - [Prerequisites](#prerequisites-)
-    - [Installation](#installation-)
-2. [Usage](#usage-)
-3. [Contributing](#contributing-)
-4. [Code of Conduct](#code-of-conduct-)
-5. [License](#license-)
-6. [Author](#author-)
-7. [Support](#support-)
+- [CodeBin 📝💾](#codebin-)
+    - [Preview](#preview)
+  - [🌟 Features](#-features)
+  - [🛠️ Built With](#️-built-with)
+  - [📚 Table of Contents](#-table-of-contents)
+  - [Getting Started 🚀](#getting-started-)
+    - [Prerequisites 📋](#prerequisites-)
+    - [Installation ⚙️](#installation-️)
+  - [Usage 💻](#usage-)
+  - [Contributing 🤝](#contributing-)
+  - [Code of Conduct 🌈](#code-of-conduct-)
+  - [License 📄](#license-)
+  - [Author 👨‍💻](#author-)
+  - [Support ❤️](#support-️)
 
 
 ## Getting Started 🚀
