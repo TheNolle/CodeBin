@@ -7,7 +7,7 @@ import serverSetup from './functions/server.setup.js'
 
 //? MongoDB
 const encodedPassword = encodeURIComponent(config.database.password)
-const connectionString = `mongodb://${config.database.user}:${encodedPassword}@${config.database.host}:${config.database.port}/${config.database.name}`
+const connectionString = config.database.user ? `mongodb://${config.database.user}:${encodedPassword}@${config.database.host}:${config.database.port}/${config.database.name}` : `mongodb://{config.database.host}:${config.database.port}/${config.database.name}`
 
 
 //? Express
